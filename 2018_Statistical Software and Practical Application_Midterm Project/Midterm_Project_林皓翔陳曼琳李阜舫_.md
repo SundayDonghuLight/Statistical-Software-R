@@ -1,10 +1,10 @@
 # Midterm Project
 410411325 林皓翔，410511303 陳曼琳，410511331 李阜舫  
 
-###2. Referring to the webpage of Kernel density estimation on Wikipedia, do the following:
- <p>
-####a.(10 pts) Describe what is called a kernel estimate of an unknown pdf. Also show that the kernel estimate $\widehat{f_{h}}$ of an unknown pdf $f$ is a legitimate pdf. That is, show that $\widehat{f_{h}}$ is nonnegative and its integral over R is one.
- <p>
+### 2. Referring to the webpage of Kernel density estimation on Wikipedia, do the following:
+
+#### a.(10 pts) Describe what is called a kernel estimate of an unknown pdf.Also show that the kernel estimate <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}">of an unknown pdf <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> is a legitimate pdf. That is, show that <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}"> is nonnegative and its integral over R is one.
+
 >中文說明:<p>
 核密度估計是一種無母數的估測方式用來估計一個隨機變數背後的機率密度函數。
 從概念上來說，基於有限的數據樣本，我們使用一個kernel function去對每一筆觀測值生成以該點為中心的分配，然後將這些分配加總後取平均來作為所估測的母體分配。
@@ -16,10 +16,10 @@ In fact, we also use a smoothing parameter $h$ to adjust the smoothness of the d
 The smaller the $h$, the more the estimator will be sensitive to each observation, and when $h$ be larger, distribution curve will be more smoother.
 We can try to use a smaller $h$ to get a better result when there are lots of data in the sample.
 
- <p>
->**To show that kernel estimate $\widehat{f_{h}}$ of an unknown pdf $f$ is a legitimate pdf:**<p>
-Let $\left ( x_{1},x_{2},...,x_{n} \right )$ be a univariate independent and identically distributed sample drawn from some distribution with an unknown density $f$. We are interested in estimating the shape of this function $f$. Its kernel density estimator is
-$$\widehat{f_{h}}\left ( x \right )= \frac{1}{n}\sum_{i=1}^{n}K_{h}\left ( x-x_{i}\right )= \frac{1}{nh}\sum_{i=1}^{n}K\left ( \frac{x-x_{i}}{h} \right )$$<p>
+
+>**To show that kernel estimate <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}"> of an unknown pdf <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> is a legitimate pdf:**<p>
+Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left(x_{1},x_{2},...,x_{n}\right)"> be a univariate independent and identically distributed sample drawn from some distribution with an unknown density <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> . We are interested in estimating the shape of this function <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> . Its kernel density estimator is <p>
+　　　　　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\left(x\right)=\frac{1}{n}\sum_{i=1}^{n}K_{h}\left(x-x_{i}\right)=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{x-x_{i}}{h}\right)" style="border:none;"> </p>
 (i). $\widehat{f_{h}}\left ( x \right )\geq 0:$<p>
 　　Since $K \geq 0$ and $h > 0$,　so $\frac{1}{nh}\sum_{i=1}^{n}K\left ( \frac{x-x_{i}}{h} \right ) \geq 0, \forall x$<p>
 　　and hence $\widehat{f_{h}}\geq 0, \forall x$
@@ -32,7 +32,7 @@ $$\widehat{f_{h}}\left ( x \right )= \frac{1}{n}\sum_{i=1}^{n}K_{h}\left ( x-x_{
 　　　　　　　 　　$=\frac{1}{n} \sum_{i=1}^{n}1$<p>
 　　　　　　　 　　$=\frac{n}{n}=1$<p>
  
-####b.(10 pts) Try to explain and distinguish the three terms: kernel, scaled kernel, and individual kernel.
+#### b.(10 pts) Try to explain and distinguish the three terms: kernel, scaled kernel, and individual kernel.
 
 >**Kernel:**<p>
 Kernel is a non-negative function that integrates to one which we refer to construction of the estimated distribution. For most applications, it is desirable to define the function to satisfy two additional requirements:<p>
