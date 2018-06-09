@@ -28,26 +28,24 @@ Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left(x_{1},x_{2},...
 　　　　　　　　　　　　　　　　　　　　(變數變換 <img src="http://chart.googleapis.com/chart?cht=tx&chl=u=\frac{x-x_{i}}{h}">　<img src="http://chart.googleapis.com/chart?cht=tx&chl=du=\frac{1}{h}dx"><p>
 　　　　　　　　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{1}{n}+\sum_{i=1}^{n}\int_{\infty}^{\infty}K\left(u\right)du"><p>
 　　　　　　　 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{1}{n}+\sum_{i=1}^{n}1"><p>
-　　　　　　　 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{n}{n}=1"><p>
+　　　　　　　 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{n}{n}=1"></p>
  
 #### b.(10 pts) Try to explain and distinguish the three terms: kernel, scaled kernel, and individual kernel.
 
 >**Kernel:**<p>
-Kernel is a non-negative function that integrates to one which we refer to construction of the estimated distribution. For most applications, it is desirable to define the function to satisfy two additional requirements:<p>
- - Normalization:<p>
+Kernel is a non-negative function that integrates to one which we refer to construction of the estimated distribution. For most applications, it is desirable to define the function to satisfy two additional requirements:
+- Normalization:<p>
 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\int_{-\infty}^{\infty}K\left+(+u+\right+)du=1">
- - Symmetry:<p>
+- Symmetry:<p>
 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=K\left+(+-u+\right+)=K\left+(+u+\right+)"> for all value of <img src="http://chart.googleapis.com/chart?cht=tx&chl=u"><p>
 
 >**Scaled kernel:**<p>
-A kernel with subscript h is called the scaled kernel and defined as $K_{h}\left ( x\right )= \frac{1}{h}K\left ( \frac{x}{h}\right )$, among h > 0 is a smoothing parameter called the bandwidth.
-
-
+A kernel with subscript h is called the scaled kernel and defined as <img src="http://chart.googleapis.com/chart?cht=tx&chl=K_{h}\left+(+x\right+)=+\frac{1}{h}K\left+(+\frac{x}{h}\right+)">, among h > 0 is a smoothing parameter called the bandwidth.
+	
 >**Individual kernel:**<p>
-Individual kernel means that we use the kernel function construct the distribution for each data from the sample individually. And the Individual kernels are these distribution, center respectively are the obersave data points.<p>
-
-
-####c. (30 pts) Consider the data: −2.1,−1.3,−0.4,1.9,5.1,6.2 used in the illustrating example on Wikipedia, reproduce the density histogram and kernel density plot with normal kernels shown on that webpage. Compare it to the kernel density plot with the choice of default values of optional input arguments of R function density. Explain why they are not the same.
+Individual kernel means that we use the kernel function construct the distribution for each data from the sample individually. And the Individual kernels are these distribution, center respectively are the obersave data points.</p>
+	
+#### c. (30 pts) Consider the data: −2.1,−1.3,−0.4,1.9,5.1,6.2 used in the illustrating example on Wikipedia, reproduce the density histogram and kernel density plot with normal kernels shown on that webpage. Compare it to the kernel density plot with the choice of default values of optional input arguments of R function density. Explain why they are not the same.
 
 
 ```r
