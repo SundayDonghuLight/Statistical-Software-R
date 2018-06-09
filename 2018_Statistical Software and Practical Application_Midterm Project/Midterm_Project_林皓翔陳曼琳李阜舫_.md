@@ -203,7 +203,7 @@ i=i+1}
 ## sum= 4 
 ## mean= 1.333333
 ```
-####4c.(5 pts) Compare the mean of the distribution of sample means to the population mean.
+####  4c.(5 pts) Compare the mean of the distribution of sample means to the population mean.
 
 ```r
 Population_data = c(3,6,3,3,0,1)
@@ -221,10 +221,10 @@ cat("mean of the sample mean=",mean(sample_mean))
 ```
 ## mean of the sample mean= 2.666667
 ```
->以mean of sample means來看,$\frac{\sum_{i=1}^{20}(ith.sample.mean)}{20}= \frac{\sum_{i=1}^{20}(partial.sum.of.sample.i)}{60}= \frac{10*(sum.of.everyone.cases)}{60}=\frac{1}{6}*(sum.of.everyone.cases)$<p>
+>以mean of sample means來看,<img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{\sum_{i=1}^{20}(ith.sample.mean)}{20}=\frac{\sum_{i=1}^{20}(partial.sum.of.sample.i)}{60}=\frac{10*(sum.of.everyone.cases)}{60}=\frac{1}{6}*(sum.of.everyone.cases)"> <p>
 所以,mean of sample means會等於population mean。
 
-####4d.(35 pts) Compare the dispersion in the population with that of the sample means based on a chart similar to the side-by-side probability histograms for discrete random variables given below,
+#### 4d.(35 pts) Compare the dispersion in the population with that of the sample means based on a chart similar to the side-by-side probability histograms for discrete random variables given below,
 
 ```r
 par(mfrow=c(1,2))
@@ -280,11 +280,11 @@ points(2.667,-0.007,col="red",pch=19)
 text(x=2.665, y=0.02,expression(mu*bar(x)),col = "red")
 ```
 
-![](Midterm_Project_林皓翔陳曼琳李阜舫__files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![Aaron Swartz](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Midterm%20Project/figure-html/unnamed-chunk-5-1.png)
 
 >由此圖可以看出population mean和mean of sample mean是一樣的。比較右圖和左圖,可以發現到sample mean的分佈比population的分布還集中。
 
-####4e.(5 pts) Using the concept that the mean of a random variable is the average of its possible values weighted by the probability mass, compute and compare the population mean and the mean of the sample mean.
+#### 4e.(5 pts) Using the concept that the mean of a random variable is the average of its possible values weighted by the probability mass, compute and compare the population mean and the mean of the sample mean.
 
 ```r
 cat("population mean=",mean(Population_data),"\n")
