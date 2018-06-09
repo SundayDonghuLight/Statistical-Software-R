@@ -287,7 +287,23 @@ text(x=2.665, y=0.02,expression(mu*bar(x)),col = "red")
 #### 4e.(5 pts) Using the concept that the mean of a random variable is the average of its possible values weighted by the probability mass, compute and compare the population mean and the mean of the sample mean.
 
 ```r
-cat("population mean=",mean(Population_data),"\n")
+Population_data = c(3,6,3,3,0,1)
+data_freq = table(Population_data)
+(data.frame(data_freq/6))
+```
+
+```
+##   Population_data      Freq
+## 1               0 0.1666667
+## 2               1 0.1666667
+## 3               3 0.5000000
+## 4               6 0.1666667
+```
+
+```r
+c=as.vector(df[[1]])
+d=sum((as.numeric(c))*(df[[2]]/6))
+cat("population mean=",d,'\n')
 ```
 
 ```
@@ -295,14 +311,34 @@ cat("population mean=",mean(Population_data),"\n")
 ```
 
 ```r
-cat("mean of the sample mean=",mean(sample_mean))
+All_Possible_Outcomes_of_Sample_mean= c(4,4,3,10/3,3,2,7/3,2,7/3,4/3,4,3,10/3,3,10/3,7/3,2,7/3,4/3,4/3)
+means_freq = table(All_Possible_Outcomes_of_Sample_mean)
+data.frame(means_freq/20)
 ```
 
 ```
-## mean of the sample mean= 2.666667
+##   All_Possible_Outcomes_of_Sample_mean Freq
+## 1                     1.33333333333333 0.15
+## 2                                    2 0.15
+## 3                     2.33333333333333 0.20
+## 4                                    3 0.20
+## 5                     3.33333333333333 0.15
+## 6                                    4 0.15
 ```
->以mean of sample means來看,$\frac{\sum_{i=1}^{20}(ith.sample.mean)}{20}= \frac{\sum_{i=1}^{20}(partial.sum.of.sample.i)}{60}= \frac{10*(sum.of.everyone.cases)}{60}=\frac{1}{6}*(sum.of.everyone.cases)$<p>
-所以,mean of sample means會等於population mean。
+
+```r
+z=as.vector(mf[[1]])
+m=sum((as.numeric(z))*(mf[[2]]/20))
+cat("mean of sample mean=",m)
+```
+
+```
+## mean of sample mean= 2.666667
+```
+
+>用期望值的方式來算population mean和mean of sample mean,<p>
+可以發現population mean= 2.666667= mean of sample mean。
+
 
 
 ####4f.(10 pts) Compare the variance of the distribution of sample means to the population variance.
