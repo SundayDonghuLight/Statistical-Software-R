@@ -20,10 +20,9 @@ We can try to use a smaller $h$ to get a better result when there are lots of da
 >**To show that kernel estimate <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}"> of an unknown pdf <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> is a legitimate pdf:**<p>
 Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left(x_{1},x_{2},...,x_{n}\right)"> be a univariate independent and identically distributed sample drawn from some distribution with an unknown density <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> . We are interested in estimating the shape of this function <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> . Its kernel density estimator is <p>
 　　　　　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\left(x\right)=\frac{1}{n}\sum_{i=1}^{n}K_{h}\left(x-x_{i}\right)=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{x-x_{i}}{h}\right)" style="border:none;"> </p>
-(i). $\widehat{f_{h}}\left ( x \right )\geq 0:$<p>
-　　Since $K \geq 0$ and $h > 0$,　so $\frac{1}{nh}\sum_{i=1}^{n}K\left ( \frac{x-x_{i}}{h} \right ) \geq 0, \forall x$<p>
-　　and hence $\widehat{f_{h}}\geq 0, \forall x$
- <p>
+(i).  <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\geq+0:"> <p>
+　　Since <img src="http://chart.googleapis.com/chart?cht=tx&chl=K\geq0and"> <img src="http://chart.googleapis.com/chart?cht=tx&chl=h>0">, so <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{x-x_{i}}{h}\right)\geq0,+\forall+x"> </p> <p>
+　　 and hence <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\geq+0,+\forall+x"> </p>
 (ii). $\int_{-\infty}^{\infty}\widehat{f_{h}}\left ( x \right )dx =1 :$<p>
 　　$\int_{-\infty}^{\infty}\widehat{f_{h}}\left ( x \right )dx =
 \frac{1}{nh} \sum_{i=1}^{n}\int_{-\infty}^{\infty}K\left ( \frac{x-x_{i}}{h} \right )dx$<p>
