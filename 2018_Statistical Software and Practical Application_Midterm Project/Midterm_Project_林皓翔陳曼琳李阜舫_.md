@@ -8,13 +8,13 @@
 >中文說明:<p>
 核密度估計是一種無母數的估測方式用來估計一個隨機變數背後的機率密度函數。
 從概念上來說，基於有限的數據樣本，我們使用一個kernel function去對每一筆觀測值生成以該點為中心的分配，然後將這些分配加總後取平均來作為所估測的母體分配。
-事實上，在使用核密度估計時，還會用到一個平滑參數$h$，用來調控估測分配的平滑程度，$h$越小對每個觀測值就越敏感，越大則分配曲線就越平滑。當樣本的觀測值夠多時，我們可以試著使用較小的$h$來獲得更好的估測結果。<p>
+事實上，在使用核密度估計時，還會用到一個平滑參數 h，用來調控估測分配的平滑程度，h 越小對每個觀測值就越敏感，越大則分配曲線就越平滑。當樣本的觀測值夠多時，我們可以試著使用較小的 h 來獲得更好的估測結果。<p>
 English description:<p>
 Kernel density estimation is a non-parametric way to estimate the probability density function of a random variable.
 Conceptually, based a finite data sample, we use a kernel function generate a probability density distribution for each observe data, and then average the sum of these distributions, come as the population distribution estimation.
-In fact, we also use a smoothing parameter $h$ to adjust the smoothness of the distribution when using kernel density estimation.
-The smaller the $h$, the more the estimator will be sensitive to each observation, and when $h$ be larger, distribution curve will be more smoother.
-We can try to use a smaller $h$ to get a better result when there are lots of data in the sample.
+In fact, we also use a smoothing parameter h to adjust the smoothness of the distribution when using kernel density estimation.
+The smaller the h, the more the estimator will be sensitive to each observation, and when h be larger, distribution curve will be more smoother.
+We can try to use a smaller h to get a better result when there are lots of data in the sample.
 
 
 >**To show that kernel estimate <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}"> of an unknown pdf <img src="http://chart.googleapis.com/chart?cht=tx&chl=f"> is a legitimate pdf:**<p>
@@ -35,12 +35,12 @@ Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left(x_{1},x_{2},...
 >**Kernel:**<p>
 Kernel is a non-negative function that integrates to one which we refer to construction of the estimated distribution. For most applications, it is desirable to define the function to satisfy two additional requirements:<p>
  - Normalization:<p>
-　　$\int_{-\infty}^{\infty}K\left ( u \right )du=1$
+　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\int_{-\infty}^{\infty}K\left+(+u+\right+)du=1">
  - Symmetry:<p>
-　　$K\left ( -u \right )=K\left ( u \right )$ for all value of $u$<p>
+　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=K\left+(+-u+\right+)=K\left+(+u+\right+)"> for all value of <img src="http://chart.googleapis.com/chart?cht=tx&chl=u"><p>
 
 >**Scaled kernel:**<p>
-A kernel with subscript $h$ is called the scaled kernel and defined as $K_{h}\left ( x\right )= \frac{1}{h}K\left ( \frac{x}{h}\right )$, among $h$ > 0 is a smoothing parameter called the bandwidth.
+A kernel with subscript h is called the scaled kernel and defined as $K_{h}\left ( x\right )= \frac{1}{h}K\left ( \frac{x}{h}\right )$, among h > 0 is a smoothing parameter called the bandwidth.
 
 
 >**Individual kernel:**<p>
