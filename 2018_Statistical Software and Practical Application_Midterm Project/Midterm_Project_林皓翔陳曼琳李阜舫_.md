@@ -23,13 +23,12 @@ Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\left(x_{1},x_{2},...
 (i).  <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\geq+0:"> <p>
 　　Since <img src="http://chart.googleapis.com/chart?cht=tx&chl=K\geq0and"> <img src="http://chart.googleapis.com/chart?cht=tx&chl=h>0">, so <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{x-x_{i}}{h}\right)\geq0,+\forall+x"> </p> <p>
 　　 and hence <img src="http://chart.googleapis.com/chart?cht=tx&chl=\widehat{f_{h}}\geq+0,+\forall+x"> </p>
-(ii). $\int_{-\infty}^{\infty}\widehat{f_{h}}\left ( x \right )dx =1 :$<p>
-　　$\int_{-\infty}^{\infty}\widehat{f_{h}}\left ( x \right )dx =
-\frac{1}{nh} \sum_{i=1}^{n}\int_{-\infty}^{\infty}K\left ( \frac{x-x_{i}}{h} \right )dx$<p>
-　　　　　　　　　　　　　　　　　　　　(變數變換 $u= \frac{x-x_{i}}{h}$　$du= \frac{1}{h}dx$<p>
-　　　　　　　 　　$=\frac{1}{n} \sum_{i=1}^{n}\int_{-\infty}^{\infty}K\left ( u \right )du$<p>
-　　　　　　　 　　$=\frac{1}{n} \sum_{i=1}^{n}1$<p>
-　　　　　　　 　　$=\frac{n}{n}=1$<p>
+(ii).  <img src="http://chart.googleapis.com/chart?cht=tx&chl=\int_{-\infty}^{\infty}\widehat{f_{h}}\left(x\right)dx=1:"><p>
+　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\int_{-\infty}^{\infty}\widehat{f_{h}}\left(x\right)dx=\frac{1}{nh}\sum_{i=1}^{n}\int_{-\infty}^{\infty}K\left(\frac{x-x_{i}}{h}\right)dx"><p>
+　　　　　　　　　　　　　　　　　　　　(變數變換 <img src="http://chart.googleapis.com/chart?cht=tx&chl=u=\frac{x-x_{i}}{h}">　<img src="http://chart.googleapis.com/chart?cht=tx&chl=du=\frac{1}{h}dx"><p>
+　　　　　　　　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{1}{n}+\sum_{i=1}^{n}\int_{\infty}^{\infty}K\left(u\right)du"><p>
+　　　　　　　 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{1}{n}+\sum_{i=1}^{n}1"><p>
+　　　　　　　 　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==\frac{n}{n}=1"><p>
  
 #### b.(10 pts) Try to explain and distinguish the three terms: kernel, scaled kernel, and individual kernel.
 
