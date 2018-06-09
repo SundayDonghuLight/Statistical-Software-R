@@ -69,8 +69,7 @@ for(i in c(1:6)){
 	curve(fx(x,i),add=T,col='red',lty=2,lwd=2)
 }
 ```
-
-![](Midterm_Project_林皓翔陳曼琳李阜舫__files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![Aaron Swartz](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Midterm%20Project/figure-html/unnamed-chunk-1-1.png)
 
 ```r
 plot(f,xlim=c(-6,10),ylim=c(0,0.18),col='blue',lwd=3,main="Wikipedia")
@@ -79,17 +78,17 @@ rug(X)
 plot(density(X),xlim=c(-6,10),ylim=c(0,0.18),lwd=3,main="Default")
 rug(X)
 ```
-
-![](Midterm_Project_林皓翔陳曼琳李阜舫__files/figure-html/unnamed-chunk-1-2.png)<!-- -->
+![Aaron Swartz](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Midterm%20Project/figure-html/unnamed-chunk-1-2.png)
 
 >Two graphs are use the same kernel, normal, but different bandwidth h.
 The figure which use default values of optional input arguments of R function density has a larger h than the wikipedia one, hence its density curve is more smoothly. And the wikipedia one is more sensitive to each observation, it’s a obviously bimodal distribution.<p>
+
 　　<p>
 　　<p>
 
-###4. In the law firm Tybo and Associates, there are six partners. Listed below is the number of cases each associate actually tried in court last month.
+### 4. In the law firm Tybo and Associates, there are six partners. Listed below is the number of cases each associate actually tried in court last month.
 
-####4a.(5 pts) How many different samples of 3 associates are possible?
+#### 4a.(5 pts) How many different samples of 3 associates are possible?
 
 ```r
 choose(6,3)
@@ -98,7 +97,7 @@ choose(6,3)
 ```
 ## [1] 20
 ```
-####4b.(20 pts) List all possible samples of three associates, and the corresponding number of cases, and compute/list the sample sum and sample mean of the number of cases in each sample.
+#### 4b.(20 pts) List all possible samples of three associates, and the corresponding number of cases, and compute/list the sample sum and sample mean of the number of cases in each sample.
 
 ```r
 A=c("Ruud","Wu","Sass","Flores","Wilhelms","Schueller")
