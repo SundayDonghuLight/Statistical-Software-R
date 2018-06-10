@@ -572,8 +572,8 @@ cat("sample mean:", mean.s)
 <p>
 
 #### d. Determine the likelihood of a sample mean this large or larger from the population based on an approximate method that takes into account that the observed sample is selected from a finite population without replacement.
-><img src="http://chart.googleapis.com/chart?cht=tx&chl=P\left(\overline{X}\geq\overline{x}\right)="> <img src="http://chart.googleapis.com/chart?cht=tx&chl=P\left(\frac{\overline{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\geq\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\right)"> <img src="http://chart.googleapis.com/chart?cht=tx&chl=\approx+P\left+(Z\geq\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\right)">
-<p>Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=y=\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}">
+><img src="http://chart.googleapis.com/chart?cht=tx&chl=P\left(\overline{X}\geq\overline{x}\right)="> <img src="http://chart.googleapis.com/chart?cht=tx&chl=P\left(\frac{\overline{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\geq\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\right)"> <img src="http://chart.googleapis.com/chart?cht=tx&chl=\approx+P\left+(Z\geq\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\right)"><p>
+Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=y=\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}">
 
 ```r
 y <- (mean.s-mean.p)/(sd.p/sqrt(10))
