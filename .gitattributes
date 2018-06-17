@@ -1,2 +1,2 @@
-assets/vendor/* linguist-vendored
-assets/images/* linguist-vendored=false
+assets/vendor/html linguist-vendored
+assets/images/html linguist-vendored=false
