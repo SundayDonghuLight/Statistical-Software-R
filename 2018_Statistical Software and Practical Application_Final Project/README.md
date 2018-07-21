@@ -60,7 +60,7 @@ barplot(prop.ages, ylim=c(0, 0.4))
 box(bty="o")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-4-1.png)
 
 ### 3.5 (Relating age and wage in the twins dataset). The variables AGE and HRWAGEL contain the age (in years) and hourly wage (in dollars) of twin 1.
 
@@ -131,7 +131,7 @@ c.wage <- twins.wage$wage_category
 barplot(t(prob), ylab="proportion", ylim=c(0, 1.2), legend.text=dimnames(prob)$c.age)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-8-1.png)
 
 #### e. Use the conditional proportions in part (c) and the graph in part (d) to explain the relationship between age and wage of the twins.
 
@@ -213,7 +213,7 @@ abs(S$residuals)>=2
 mosaicplot(age_wage, shade=T, main="Age & Wage")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-13-1.png)
 
 #### d. Use the numerical and graphical work from parts (b) and (c) to explain how the table of age and wages differs from an independence structure.
 
@@ -296,7 +296,7 @@ qqnorm(measurements, main = "measurements", ylab = "length")
 qqline(measurements, col="red")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-17-1.png)
 
 > 我們利用normal quantile-quantile plot，我們可看出母體是近似常態分配，滿足我們的假設。
 
@@ -310,7 +310,7 @@ snowfalls=snowfall[,-1]
 boxplot(snowfalls, horizontal=TRUE,xlab="snowfall")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-18-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-18-1.png)
 
 > 利用boxplot可以看出Buffalo的降雪量明顯比Cleveland多，不論平均數或是四分位距都是在Cleveland的右邊。
 
@@ -521,7 +521,7 @@ qqnorm(L$res, ylab="Sample Quantiles of Residuals")
 qqline(L$res, col="blue")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-25-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/2018_Statistical%20Software%20and%20Practical%20Application_Final%20Project/figure-markdown_github/unnamed-chunk-25-1.png)
 
 > <p>
 > 先畫出Fitted Values與Residuals的點散圖，這邊的Fitted Values即為使用最小平方法所預測出來的平均數，即$\\widehat{\\mu\_{1}},\\widehat{\\mu\_{2}},\\widehat{\\mu\_{3}}$，y座標則為Sample data與其對應的母體平均數估測值之間的殘差，從圖中可看出這三組樣本的離散程度是有所差異的，與我們假設的具有相同變異數有些不符合，不過差異的程度並不是很嚴重，對分析結果的影響大概還在可接受的範圍。
