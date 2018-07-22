@@ -10,17 +10,14 @@
 >
 > ### *Solution*
 >
-> Let **X** denote the number of units ordered. If *s* units are stocked,then the profit - call it P(*s*) - can be expressed as
-> <center>
-> *P*(*s*) = *b***X** − (*s*−**X**)*l*　　**i****f**　　**X**≤ *s*
-> </center>
-> <center>
-> 　　　=*s**b*　　　　　　　　　**i****f**　　**X**&gt; *s*
-> </center>
+> Let <img src="http://chart.googleapis.com/chart?cht=tx&chl=\mathbf{X}"> denote the number of units ordered. If *s* units are stocked,then the profit - call it P(*s*) - can be expressed as
+> <center><img src="http://chart.googleapis.com/chart?cht=tx&chl=P\left(s\right)=b\mathbf{X}-\left(s-\mathbf{X}\right)l">　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mathbf{if}">　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mathbf{X}\leq+s"></center>
+> <p><center>　　<img src="http://chart.googleapis.com/chart?cht=tx&chl==sb">　　　　　　　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mathbf{if}">　　<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mathbf{X}&gt;"> <img src="http://chart.googleapis.com/chart?cht=tx&chl=s"></center>
+> <p>
 > Hence,the expected profit equals
-> <center>
-> $E\\left \[ P\\left ( s \\right ) \\right \]= \\sum\_{i= 0}^{s}\\left \[ bi- \\left ( s-i \\right )l\\right \]p\\left ( i \\right )+\\sum\_{i=s+1}^{\\infty }sbp\\left ( i \\right )$
-> </center>
+> 
+> <center> <img src="http://chart.googleapis.com/chart?cht=tx&chl=E\left[P\left(s\right)\right]=\sum_{i=0}^{s}\left[bi-\left(s-i\right)l\right]p\left(i\right)+\sum_{i=s+1}^{\infty}sbp\left(i\right)" </center>
+> 
  　 　 　
 
 ### 實際化後的欲解題目
@@ -137,4 +134,4 @@ cat("The best number of stock is ",best.stock); cat("and profit is ",max.expecte
 plot(stock.num, stock.profit, main="Scatter plot of stock and profit", type='l')
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](https://raw.githubusercontent.com/SundayDonghuLight/Statistical-Software-R/master/Probability_Stocking%20Problem/figure-markdown_github/unnamed-chunk-4-1.png)
