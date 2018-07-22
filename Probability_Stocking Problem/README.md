@@ -21,7 +21,7 @@
 > <center>
 > $E\\left \[ P\\left ( s \\right ) \\right \]= \\sum\_{i= 0}^{s}\\left \[ bi- \\left ( s-i \\right )l\\right \]p\\left ( i \\right )+\\sum\_{i=s+1}^{\\infty }sbp\\left ( i \\right )$
 > </center>
-> 　 　 　
+ 　 　 　
 
 ### 實際化後的欲解題目
 
@@ -36,6 +36,7 @@
 <p>
 將函數回傳的訂單機率p.m.f.dataframe存在變數"order"中
 <p>
+  
 ``` r
 rm(list=ls())
 
@@ -66,6 +67,7 @@ order <- order_prob(x)
 <p>
 並把這兩個變數相加即是給定備貨量時在各訂單數量下的利潤乘上其機率的加總，正是期望值的定義
 <p>
+  
 ``` r
 E <- function(stock,order,benifit,loss){
   enough.sum <- 0
@@ -105,6 +107,7 @@ E <- function(stock,order,benifit,loss){
 <p>
 經過電腦運算後show出最佳的備貨量及該備貨量下的利潤
 <p>
+  
 ``` r
 max.expected.value <- 0
 best.stock <- 0
