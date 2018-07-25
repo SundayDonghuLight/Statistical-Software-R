@@ -135,6 +135,7 @@ Rglpk_solve_LP(obj, mat, dir, rhs, max = max)
 承接前面介紹的應用題
 minimize: 3400 × *X*<sub>1</sub> + 3200 × *X*<sub>2</sub> + 3500 × *X*<sub>3</sub> + 3600 × *X*<sub>4</sub> + 3900 × *X*<sub>5</sub>
 subject to(coefficient matrix):
+
 ``` r
 obj <- c(3400, 3200, 3500, 3600 ,3900)
 mat <- matrix(c(1,1,1,1,0,0,0,0,0,0, 0,1,1,1,1,0,0,0,0,0, 0,0,0,1,1,1,1,0,0,0, 0,0,0,0,0,1,1,1,1,0, 0,0,0,0,0,0,0,0,1,1), nrow = 10)
